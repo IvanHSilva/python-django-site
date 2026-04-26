@@ -7,9 +7,9 @@ class Task(models.Model):
         ('A', 'Em Andamento'),
         ('C', 'Concluído'),
     ]
-    title = models.CharField(max_Length=120)
+    title = models.CharField(max_length=120)
     description = models.TextField()
-    status = models.CharField(max_Length=1, choices=STATUS_CHOICES, default='P')
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='P')
     created_at = models.DateTimeField(auto_now_add=True)
     due_date = models.DateField()
 
